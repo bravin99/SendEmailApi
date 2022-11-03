@@ -13,7 +13,7 @@ namespace SendEmailApi.Controllers
             _emailService = emailService;
         }
 
-        [HttpPost("send-email")]
+        [HttpPost("send")]
         public IActionResult SendEmail(EmailDto request)
         {
             _emailService.SendEmail(request);
